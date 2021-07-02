@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="878.0" style="-fx-background-color: #1f1924;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hms.PatientFromController">
+   <children>
+      <Label layoutX="343.0" layoutY="-7.0" prefHeight="70.0" prefWidth="330.0" text="Patient From" textFill="#e2e1ee">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="108.0" prefHeight="30.0" prefWidth="124.0" text="PatientName" textFill="#efedf5">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="148.0" prefHeight="30.0" prefWidth="124.0" text="Fathername" textFill="#f2eff8">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="197.0" prefHeight="21.0" prefWidth="101.0" text="Gender" textFill="#f4f1fc">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="247.0" prefHeight="21.0" prefWidth="101.0" text="Age" textFill="#f4f1f8">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="298.0" prefHeight="30.0" prefWidth="140.0" text="Phone Number" textFill="#dfdde8">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="patientname" layoutX="204.0" layoutY="103.0" promptText="patient name" />
+      <TextField fx:id="fathername" layoutX="204.0" layoutY="143.0" promptText="fathername" />
+      <TextField fx:id="gender" layoutX="204.0" layoutY="192.0" promptText="gender" />
+      <TextField fx:id="age" layoutX="204.0" layoutY="242.0" promptText="age" />
+      <TextField fx:id="phonenumber" layoutX="204.0" layoutY="293.0" promptText="phonenumber" />
+      <Label layoutX="62.0" layoutY="401.0" prefHeight="21.0" prefWidth="91.0" text="Supervisor" textFill="#f4f1ff">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="346.0" prefHeight="30.0" prefWidth="140.0" text="Admision Date" textFill="#e6e5ee">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="447.0" layoutY="128.0" prefHeight="21.0" prefWidth="149.0" text="Disease History" textFill="#eeedf2e8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="Dieasehistory" layoutX="605.0" layoutY="108.0" prefHeight="70.0" prefWidth="214.0" promptText="Disease History" />
+      <TextArea fx:id="Discription" layoutX="612.0" layoutY="223.0" prefHeight="76.0" prefWidth="200.0" promptText="Discription" />
+      <Label layoutX="471.0" layoutY="246.0" prefHeight="21.0" prefWidth="101.0" text="Discription" textFill="#ededf5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="665.0" layoutY="353.0" mnemonicParsing="false" onAction="#handlesaveAction" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #1f1924;" text="save" textFill="#eee4e4">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="13.0" text="Patient Details" textFill="#e7e6f2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="63.0" prefHeight="28.0" prefWidth="101.0" text="Patient ID" textFill="#f3f3f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="patientid" layoutX="204.0" layoutY="62.0" promptText="patient Id" />
+      <Button layoutX="476.0" layoutY="357.0" mnemonicParsing="false" onAction="#handlehomepageAction" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #1f1924;" text="Cancel" textFill="#eee9e9">
+         <graphic>
+            <FontAwesomeIconView fill="#e8d9d9" glyphName="TIMES" size="25" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ComboBox fx:id="combobox" layoutX="204.0" layoutY="396.0" prefHeight="31.0" prefWidth="187.0" promptText="Select Supervisor" />
+      <DatePicker fx:id="dathofbirth" layoutX="204.0" layoutY="342.0" prefHeight="31.0" prefWidth="187.0" promptText="Admission Date" />
+   </children>
+</AnchorPane>
